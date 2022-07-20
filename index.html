@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title> test </title>
+</head>
+<body>
+
+    <section class="parent" id="container">
+        <div class="logo text-center">
+            <img src="https://routeweather.netlify.app/images/logo@2x.png" alt="" class="logo" >
+            <h2 class="text-light">Weather</h2>
+        </div>
+        <div id="countryName" class="text-center w-100 ">
+            <div class="location text-center" >
+                <span id="day">
+
+                </span>
+                <h1 class="text-light py-1" id="title"> </h1>
+                <span id="time"></span>
+            </div>
+        </div>
+    <div class="input-search">
+		<input type="text" class="bg-dark " placeholder="Find your location..." id="search">
+		<button>search</button>
+	</div>
+<div class="container">
+        <div class="row ">
+        <div class=" col-md-4 ">
+            <div id="one" class="day-one">
+                <div id="dayOne">
+                    
+                </div>
+                <div id="canvasOneParent">
+                    <canvas width="200" height="200" class="cn" id="can-one"></canvas>
+                </div>
+                <div class="description text-center" id="desc">
+                   
+                </div>
+            </div>
+        </div>
+        <div class=" col-md-4 ">
+            <div class="day-two " >
+                <div id="dayTwo">
+
+                </div>
+                <div id="canvasTwoParent">
+                    <canvas width="200" height="200" class="cn" id="can-two"></canvas>
+                </div>
+                <div class="description text-center" id="desc_2">
+                   
+                </div>
+            </div>
+        </div>
+        <div class=" col-md-4 ">
+            <div class="day-three ">
+                <div id="dayThree">
+
+                </div>
+                <div id="canvasThreeParent">
+                    <canvas width="200" height="200" class="cn" id="can-three"></canvas>
+                </div>
+                <div class="description text-center" id="desc_3">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+        <div class="row row-two ">
+        <div class=" col-md-2  text-light  more-info ">
+           <div id="humidity">
+                
+            </div>
+        </div>
+        <div class=" col-md-2   text-light  more-info">
+           <div id="wind_dir">
+                
+            </div>
+        </div>
+        <div class=" col-md-2   text-light  more-info">
+           <div id="wind_kph">
+                
+            </div>
+        </div>
+        <div class=" col-md-2   text-light  more-info">
+           <div id="daily_chance_of_rain">
+                
+            </div>
+        </div>
+        <div class=" col-md-2   text-light  more-info">
+           <div id="lat">
+                
+            </div>
+        </div>
+        <div class=" col-md-2   text-light  more-info">
+           <div id="lon">
+                
+            </div>
+        </div>
+        
+    </div>
+</div>
+</section>
+
+    
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/jquery-3.6.0.js"></script> -->
+    <script src="js/life.js"></script>
+</body>
+</html>
+<!-- ============================================================================== -->
+
+        <!-- <div class="left-side " id="leftSide">
+            
+        </div>
+        <div class="right-side col-md-2 py-5 " id="rightSide">
+            <div class="container " id="rightSideItems">
+                
+            </div>
+        </div> -->

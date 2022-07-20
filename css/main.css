@@ -1,0 +1,192 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.parent{
+    min-height: 100vh;
+    background-image: url(../imgs/byron-johnson-ec2SZSGPwJA-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.input-search{
+    width: 75% !important;
+    position: relative;
+}
+.input-search input{
+    width:100%;
+    border-radius: 50px  !important;
+    color: white ;
+    background-color: rgb(14, 13, 13);
+    padding: 15px  !important ;
+    border: none;
+    outline: none;
+}
+.input-search button{
+    width: 100px ;
+    background-color: rgb(48, 154, 224);
+    position: absolute;
+    top:5px ;
+    bottom: 5px ;
+    text-align: center;
+    right: 5px;
+    padding: 5px 10px  ;
+    border-radius: 20px ;
+    font-size: 18px ;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.day-one,
+.day-two,
+.day-three{
+    height: 350px ;
+    background-color: #1327309c;
+    border-radius: 15px;
+    position: relative;
+}
+.day-one::before,.day-two::before,.day-three::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(123, 201, 243, 0.2);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
+}
+.location{
+max-width: 95%;
+max-height: 10%;
+margin: 15px auto;
+background-image: url(../imgs/vintage-textured-paper-background-vector.jpg);
+background-size: cover;
+border-radius: 15px ;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.row-two{
+    box-sizing: border-box !important;
+    justify-content: space-between;
+}
+.row-two .col-md-2{
+    padding: 10px ;
+    
+}
+.more-info{
+    background-image: linear-gradient(120deg,rgba(123, 201, 243, 0.5) ,rgba(123, 201, 243, 0.2) ,rgba(221, 170, 50, 0.5) 77%,rgba(221, 170, 50, 0.5) 87%,#95765a 87%,#8d5c31 90%,#000 90% ,#000 );
+    padding: 20px ;
+    box-shadow: -3px 2px 25px black;
+}
+#time{
+    width: 150px  ;
+    height: 100%;
+    /* position: absolute;
+    top: 0;
+    right: 5%; */
+    font-size: 30px ;
+    font-weight: 900;
+}
+#day{
+    width: 150px  ;
+    height: 100%;
+    /* position: absolute;
+    top: 0;
+    left: 5%; */
+    font-size: 30px ;
+    font-weight: 900;
+}
+#title{
+    font-size: 45px ;
+    font-weight: 900;
+    width: 60%;
+    width: 50%;
+    margin: 0 15px ;
+}
+
+
+
+.col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    margin:15px 0;
+}
+.day-two,.day-one,.day-three{
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.day-one{
+    border-bottom: rgb(248, 44, 44) solid 2px;
+}
+canvas{
+    /* border: 2px solid red !important; */
+    width: 150px !important;
+    height: 150px !important;
+    z-index: 1000 !important;
+    background-color: rgb(8, 30, 36 ,.6) !important;
+    border-radius: 50% !important;
+    display: flex;
+    justify-content: flex-start !important;
+}
+#canvasOneParent,#canvasTwoParent,#canvasThreeParent{
+    display: flex;
+    width: 100% !important;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+#dayOne,#dayTwo,#dayThree{
+    width: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff !important;
+}
+
+i{
+    font-size: 70px;
+    color: rgb(22, 85, 71);
+    margin: 10px 15px;
+}
+.day-one div,.day-three div,.day-two div{
+    width: 400px !important;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    padding: 3px ;
+    background-color: rgba(93, 218, 223, 0.1);
+    text-align: start;
+    margin-bottom: 25px ;
+    
+}
+#desc,#desc_2,#desc_3{
+    width: 100% !important;
+    border-radius: 0 !important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    border-bottom-left-radius: inherit !important;
+    border-bottom-right-radius: inherit !important;
+    margin: 0;
+    padding: 10px;
+    background: inherit;
+}
+.day-one div h6,.day-three div h6,.day-two div h6{
+font-size: 18px !important;
+font-weight: 700 !important;
+}
